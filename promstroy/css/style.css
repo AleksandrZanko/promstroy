@@ -1,0 +1,811 @@
+body {
+  min-width: 320px;
+
+  color: #222222;
+  font-family: 'Roboto', sans-serif;  
+  background-color: #ffffff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+  	clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+}
+
+.page-header {
+  width: 100%;
+}
+
+.page-header__promo {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+
+  background-image: url('../img/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.page-header__promo-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header__title-wrapper { 
+  height: fit-content;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+
+  background-color: #56bbf2;
+  border-radius: 5px;
+}
+
+.page-header__title {
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.page-header__title {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-header__contacts {
+  height: fit-content;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  background-color: #56bbf2;
+  border-radius: 5px;
+}
+
+.contacts__phone {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.contacts__phone:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav {
+  width: 100%;
+  background-color: #56bbf2;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: start;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav__link {
+  display: block;
+  padding: 15px 0;
+  padding-top: 7px;
+  padding-bottom: 5px;
+
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav__link--active {
+ font-weight: 500;
+ border-bottom: 2px solid #ffffff;
+}
+
+.page-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.page-main__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.servises {
+  margin-bottom: 20px;
+}
+
+.servises__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.servises__item {
+  padding-bottom: 10px;
+
+  width: 30%;
+  padding-right: 40px;
+}
+
+.servises__link {
+  display: flex;
+  align-items: center;
+
+  padding-left: 52px;
+
+  min-height: 45px;
+
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  color: #444444;
+  text-decoration: none;
+  
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: all 0.3s;
+}
+
+.servises__link:hover {
+  cursor: pointer;
+  color:#56bbf2;
+}
+
+.servises__link--temperature {
+  background-image: url(../img/temperature-icon.svg);
+}
+
+.servises__link--temperature:hover {
+  background-image: url(../img/temperature-icon-blue.svg);
+}
+
+.servises__link--clean {
+  background-image: url(../img/clean-icon.svg);
+}
+
+.servises__link--clean:hover {
+  background-image: url(../img/clean-icon-blue.svg);
+}
+
+.servises__link--water {
+  background-image: url(../img/water-icon.svg);
+}
+
+.servises__link--water:hover {
+  background-image: url(../img/water-icon-blue.svg);
+}
+
+.servises__link--snow {
+  background-image: url(../img/snow-icon.svg);
+}
+
+.servises__link--snow:hover {
+  background-image: url(../img/snow-icon-blue.svg);
+}
+
+.servises__link--home-water {
+  background-image: url(../img/home-water-icon.svg);
+}
+
+.servises__link--home-water:hover {
+  background-image: url(../img/home-water-icon-blue.svg);
+}
+
+.servises__link--valve {
+  background-image: url(../img/valve-icon.svg);
+}
+
+.servises__link--valve:hover {
+  background-image: url(../img/valve-icon-blue.svg);
+}
+
+.servises__link--outside {
+  background-image: url(../img/outside-icon.svg);
+}
+
+.servises__link--outside:hover {
+  background-image: url(../img/outside-icon-blue.svg);
+}
+
+.servises__link--project {
+  background-image: url(../img/project-icon.svg);
+}
+
+.servises__link--project:hover {
+  background-image: url(../img/project-icon-blue.svg);
+}
+
+.servises__link--effluent {
+  background-image: url(../img/effluent-icon.svg);
+}
+
+.servises__link--effluent:hover {
+  background-image: url(../img/effluent-icon-blue.svg);
+}
+
+.servises__link--heating {
+  background-image: url(../img/heating-icon.svg);
+}
+
+.servises__link--heating:hover {
+  background-image: url(../img/heating-icon-blue.svg);
+}
+
+.servises__link--made-boiler {
+  background-image: url(../img/made-boiler-icon.svg);
+}
+
+.servises__link--made-boiler:hover {
+  background-image: url(../img/made-boiler-icon-blue.svg);
+}
+
+.info__text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  color: #444444;
+}
+
+.info__list {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  color: #444444;
+}
+
+.page-footer {
+  padding: 15px 0;
+  background-color: #56bbf2;
+}
+
+.page-footer__container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-footer__contacts-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+
+  text-decoration: none;
+}
+
+/* mobile-menu */
+.menu__icon {
+  display: none;
+  margin-top: 1px;
+  width: 45px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .menu__icon:active span {
+    background-color: #fafafa; }
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+.menu__icon span:nth-child(1) {
+  top: 2px; }
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px; }
+
+.menu__icon span:nth-child(4) {
+  top: 24px; }
+
+.menu__links-item {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid #fafafa; }
+  .menu__links-item:active {
+    color: #ffffff;
+    text-decoration: none; }
+
+.menu__links-item:first-child {
+  border-top: 2px solid #fafafa; }
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.menu.menu_state_open .menu__links {
+  display: block; }
+
+.menu__links {
+  display: none; }
+.menu__logo {
+  display: none;
+}
+
+.page-main__logo {
+  width: 120px;
+  height: 100px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__text--before-list {
+  margin-bottom: 5px;
+}
+
+.info__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.info__image {
+  width: 46%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.info__text--with-image {
+  width: 52%;
+  margin-bottom: 0;
+}
+
+
+/* warm-systems page */
+.page-main__title-wrapper {
+  display: flex; 
+  justify-content: start;
+  align-items: center;
+}
+
+.page-main__logo-warm-systems {
+  background-image: url(../img/temperature-icon.svg);
+}
+
+.info__text-image--warm-systems-1 {
+  background-image: url(../img/warm-systems-1.jpg);
+}
+
+.info__text-image--warm-systems-2 {
+  background-image: url(../img/warm-systems-2.jpg);
+}
+
+/* clean-systems page */
+
+.page-main__logo-clean-systems {
+  background-image: url(../img/clean-icon.svg);
+}
+
+/* water nodes page */
+
+.page-main__logo--water-nodes {
+  background-image: url(../img/water-icon.svg);
+}
+
+/* cold system page */
+
+.page-main__logo--cold-system {
+  background-image: url(../img/snow-icon.svg);
+}
+
+.info__text-image--cold-systems-1 {
+  background-image: url(../img/cold-systems-1.jpg);
+}
+
+/* water system page */
+
+.page-main__logo--water-system {
+  background-image: url(../img/home-water-icon.svg);
+}
+
+.info__text-image--water-systems-1 {
+  background-image: url(../img/water-systems-1.jpg);
+}
+
+/* water treatment page */
+
+.page-main__logo--water-treatment {
+  background-image: url(../img/valve-icon.svg);
+}
+
+.info__text-image--water-treatment-1 {
+  background-image: url(../img/water-treatment-1.jpg);
+}
+
+/* outer nets page */
+
+.page-main__logo--outer-nets {
+  background-image: url(../img/outside-icon.svg);
+}
+
+.info__text-image--outer-nets-1 {
+  background-position: top;
+  background-image: url(../img/outside-1.jpg);
+}
+
+.info__text-image--outer-nets-2 {
+  background-image: url(../img/outside-2.jpg);
+}
+
+/* project page */
+
+.page-main__logo--projects {
+  
+  background-image: url(../img/project-icon.svg);
+}
+
+/* canalization page */
+
+.page-main__logo--canalization {
+  background-image: url(../img/effluent-icon.svg);
+}
+
+.info__text-image--canalization-1 {
+  background-image: url(../img/canalization-1.jpg);
+}
+
+/* heating page */
+
+.page-main__logo--heating {
+  background-image: url(../img/heating-icon.svg);
+}
+
+.info__text-image--heating-1 {
+  background-image: url(../img/heating-1.jpg);
+}
+
+/* made boiler page */
+
+.page-main__logo--made-boiler {
+  background-image: url(../img/made-boiler-icon.svg);
+}
+
+.info__text-image--made-boiler-1 {
+  width: 27%;
+  background-image: url(../img/made-boiler-1.jpg);
+}
+
+.info__text--with-image-made-boiler {
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .page-header__promo-container,
+  .nav__list,
+  .page-main,
+  .page-footer__container {
+     width: 100%;
+  }
+
+  .page-header__promo {
+    height: 300px;
+  }
+
+  .page-main {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .servises__list {
+    justify-content: space-between;
+  }
+
+  .servises__item {
+    width: 46%;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .info__text-wrapper--heating {
+    flex-wrap: wrap;
+
+  }
+
+  .info__text--with-image-heating {
+    width: 100%;
+  }
+
+  .info__text-image--heating-1 {
+    width: 80%;
+    height: 400px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .page-header__promo {
+    height: 280px;
+  }
+  
+  .nav__link {
+    font-size: 18px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .servises__item {
+    width: 48%;
+    padding-right: 10px;
+  }
+ 
+  .info__text-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .info__text--with-image {
+    width: 100%;
+  }
+
+  .info__image {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 670px) {
+  .page-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .page-header__promo {
+    
+    background-image: url(../img/header-bg-mobile.png);
+  }
+
+  .page-header__promo-container {
+    display: none;
+  }
+
+  .nav {
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__logo {
+    display: block;
+  }
+
+  .menu__icon {
+    display: block; }
+  .menu__icon {
+    display: inline-block; }
+  .menu__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 70px;
+    background-color: #56bbf2;
+    z-index: 1000;
+    overflow: auto; }
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center; } 
+
+    .servises__item {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    
+  }
+
+  @media (max-width: 600px) {
+
+    .page-header__promo {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 500px) {
+
+    .page-header__promo {
+      height: 218px;
+    }
+
+    .page-main__title--clean-systems {
+      font-size: 20px;
+    }
+
+    .page-main__title--water-nodes {
+      font-size: 20px;
+    }
+
+    .info__image {
+      width: 100%;
+      height: 250px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    .page-header__promo {
+      height: 200px;
+    }
+
+    .page-main__title {
+      font-size: 22px;
+    }
+
+    .page-main__title--clean-systems {
+      font-size: 18px;
+    }
+
+    .page-main__title--water-nodes {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    .page-header__promo {
+      height: 180px;
+    }
+
+    .page-main__title {   
+      font-size: 18px;
+    }
+
+    .page-main__logo {
+      height: 70px;
+    }
+
+    .page-main__title--clean-systems {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .page-main__title--water-nodes {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .page-main__logo--heating {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
