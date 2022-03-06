@@ -157,6 +157,7 @@ p {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 10px;
 
   font-size: 24px;
   line-height: 1.4;
@@ -588,6 +589,90 @@ p {
   width: 70%;
 }
 
+/* object page */
+
+.card-wrapper {
+  display: flex;
+  justify-content: start;
+  flex-wrap:wrap;
+
+  width: 100%;
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 22%;
+  height: auto;
+
+  border: 3px solid #56bbf2;
+  border-radius: 5px;
+}
+
+.card__title {
+  text-align: center;
+  padding: 5px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: white;
+  background-color: #56bbf2;
+}
+
+.card__image {
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__image--authomatization {
+  height: 206px;
+  background-image: url(../img/athomatization.jpg);
+}
+
+.card__image--autho-gas {
+  height: 206px;
+  background-image: url(../img/autho-gas.jpg);
+}
+
+.card__image--metal {
+  background-image: url(../img/metal.jpg);
+}
+
+.card__image--condi {
+  background-image: url(../img/cold-systems-1.jpg);
+}
+
+.card__image--hvo {
+  height: 206px;
+  background-image: url(../img/hvo.jpg);
+}
+
+.card__image--outside {
+  height: 206px;
+  background-image: url(../img/outside.jpg);
+}
+
+.card__image--warm-machine {
+  background-image: url(../img/warm-machine.jpg);
+}
+
+.card__image--personal {
+  background-image: url(../img/personal.jpg);
+}
+
+.card__image--warm {
+  background-image: url(../img/warm.jpg);
+}
+
+.card__image--air {
+  background-image: url(../img/air.jpg);
+}
+
 @media (max-width: 1200px) {
   .page-header__promo-container,
   .nav__list,
@@ -614,6 +699,31 @@ p {
     width: 46%;
     padding-right: 20px;
   }
+
+  .card {
+    width: 30%;
+  }
+
+  .card__image {
+    height: 250px;
+  }
+
+  .card__image--hvo,
+  .card__image--outside,
+  .card__image--personal,
+  .card__image--warm {
+    height: 276px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    width: 46%;
+  }
+
+  .card__image {
+    height: 300px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -632,6 +742,18 @@ p {
 
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 861px) {
+  .card__image--personal {
+    height: 326px;
+  }
+}
+
+@media (max-width: 840px) {
+  .card__image--metal {
+    height: 326px;
   }
 }
 
@@ -671,6 +793,11 @@ p {
   }
 }
 
+@media (max-width: 700px) {
+  .card__image--condi {
+    height: 326px;
+  }
+}
 
 @media (max-width: 670px) {
   .page-header {
@@ -729,7 +856,19 @@ p {
       padding-bottom: 20px;
     }
 
-    
+    .card {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .card__image {
+      height: 360px;
+    }
+
+    .card__image--authomatization {
+      height: 420px;
+    }
   }
 
   @media (max-width: 600px) {
@@ -759,6 +898,10 @@ p {
       margin: 0 auto;
       margin-bottom: 20px;
     }
+
+    .card__image {
+      height: 300px;
+    }
   }
 
   @media (max-width: 450px) {
@@ -778,6 +921,12 @@ p {
     .page-main__title--water-nodes {
       font-size: 18px;
     }
+
+    .card {
+      height: 95%;
+    }
+
+    
   }
 
   @media (max-width: 400px) {
@@ -807,5 +956,9 @@ p {
     .page-main__logo--heating {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    .card__image {
+      height: 250px;
     }
   }
