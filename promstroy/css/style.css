@@ -28,13 +28,13 @@ p {
   justify-content: space-between;
 
   width: 100%;
-  height: 360px;
+  height: 450px;
   margin: 0 auto;
 
   background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
 }
 
 .page-header__promo-container {
@@ -73,6 +73,7 @@ p {
 
 .page-header__contacts {
   height: fit-content;
+  margin-left: 20px;
   margin-top: 20px;
   margin-right: 20px;
   padding: 15px;
@@ -673,6 +674,53 @@ p {
   background-image: url(../img/air.jpg);
 }
 
+/* about-us page */
+
+.sertificate__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sertificate {
+  width: 48%;
+}
+
+.sertificate__button {
+  padding: 10px 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #56bbf2;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.sertificate__button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.serificate__image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info__text-city-address {
+  line-height: 24px;
+}
+
+.info__text-address {
+  display: block;
+  padding-top: 5px;
+  color: #56bbf2;
+}
+
 @media (max-width: 1200px) {
   .page-header__promo-container,
   .nav__list,
@@ -806,7 +854,7 @@ p {
   }
   .page-header__promo {
     
-    background-image: url(../img/header-bg-mobile.png);
+    background-image: url(../img/header-bg-mobile.jpg);
   }
 
   .page-header__promo-container {
@@ -901,6 +949,23 @@ p {
 
     .card__image {
       height: 300px;
+    }
+
+    .sertificate__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    
+    .sertificate {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+      font-size: 31px;
+      line-height: 34px;
     }
   }
 
